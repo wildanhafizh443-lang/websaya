@@ -1,0 +1,226 @@
+/* ==================================== */
+
+
+/* 1. GENERAL & STRUKTUR HALAMAN */
+
+
+/* ==================================== */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #DCDCDC;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* ==================================== */
+
+
+/* 2. HEADER & LOGO */
+
+
+/* ==================================== */
+
+.header {
+    background: #D2B48C;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    top: 1px;
+}
+
+
+/* ==================================== */
+
+
+/* ==================================== */
+
+
+/* ==================================== */
+
+
+/* 3. NAVBAR (FINAL, MEMAKSIMALKAN DIV) */
+
+
+/* ==================================== */
+
+.navbar {
+    display: flex;
+    /* KRUSIAL: Agar nav-item berbaris horizontal */
+    background: #333;
+    padding: 0;
+    /* Hapus padding vertikal di sini */
+    justify-content: center;
+    /* Memusatkan semua nav-item */
+}
+
+.nav-item {
+    /* Flex: 1 membuat lebar setiap item sama besar */
+    /* Namun, jika Anda ingin ukuran fleksibel/hanya sesuai konten, hapus 'flex: 1;' */
+    /* flex: 1; */
+    padding: 15px 20px;
+    /* Padding vertikal & horizontal di item itu sendiri */
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background: #555;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    /* Agar tautan mengisi seluruh area .nav-item */
+    font-weight: bold;
+}
+
+
+/* 4. MAIN CONTENT AREA (Container & Sidebar) */
+
+
+/* Digunakan di index.html atau kontak.html */
+
+
+/* ==================================== */
+
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.content {
+    flex: 3;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+/* Style untuk Ikon Medsos & Delivery di Sidebar */
+
+.sidebar ul {
+    list-style: none;
+    /* Menghilangkan bullet point default */
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li .fa-whatsapp {
+    color: #25D366;
+}
+
+.sidebar ul li .fa-facebook {
+    color: #3b5998;
+}
+
+.sidebar ul li .fa-instagram {
+    color: #E1306C;
+}
+
+.sidebar ul li .fa-twitter {
+    color: #1DA1F2;
+}
+
+.delivery-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+
+/* ==================================== */
+
+
+/* 5. GALLERY (Menu Makanan) */
+
+
+/* ==================================== */
+
+.gallery {
+    padding: 20px;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+
+/* Style untuk Kartu Menu */
+
+.card {
+    background: white;
+    /* Diubah ke putih untuk konsistensi */
+    color: #0d180e;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+}
+
+
+/* Style untuk Gambar di dalam Kartu */
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Style untuk Teks Judul dan Harga */
+
+.menu-title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    /* Ditambahkan agar teks menu lebih tebal */
+}
+
+.card p {
+    padding-bottom: 15px;
+    margin: 0;
+    font-weight: 500;
+}
